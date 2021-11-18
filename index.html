@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--Título de la web-->
+   <title>Manines Ganga Productions</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Logo/Icono-->
+   <link rel="shortcut icon" href="/media/icons/MGlogoBlack.ico">
+   <!--Importa la tipografía Muli-->
+   <link rel="stylesheet" type="text/css" media="screen" href="//fonts.googleapis.com/css?family=Muli">
+   <!--Importa la tipografía Rubik-->
+   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type="text/css" media="screen">
+   <!--CSS-->
+   <link href="stylesheet.css" rel="stylesheet">
+   <!--Scripts-->
+   <script data-require="jquery@*" data-semver="2.1.1"
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="script.js"></script>
+   <script src="wb.panel.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#headerPanelMenu").panel({ animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true });
+         $("#headerPanelMenu_markup ul li a").click(function (event) {
+            $.panel.hide($("#headerPanelMenu_panel"));
+         });
+      });
+   </script>
+</head>
+
+<body>
+   <header>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar" id="menuFlotante">
+         <!--Menú desplegable-->
+         <div class="col-1">
+            <div id="wb_headerPanelMenu" style="display:inline-block;width:50px;height:53px;z-index:0;">
+               <a href="#headerPanelMenu_markup" id="headerPanelMenu">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+               </a>
+               <div id="headerPanelMenu_markup">
+                  <ul role="menu">
+                     <!--Títulos H2-->
+                     <li role="menuitem">
+                        <h2><a href="#presentacion" class="nav-link">PRESENTACIÓN</a></h2>
+                     </li>
+                     <li role="menuitem">
+                        <h2><a href="#servicios" class="nav-link">SERVICIOS</a></h2>
+                     </li>
+                     <li role="menuitem">
+                        <h2><a href="#equipo" class="nav-link">EQUIPO</a></h2>
+                     </li>
+                     <li role="menuitem">
+                        <h2><a href="#contacto" class="nav-link">CONTACTO</a></h2>
+                     </li>
+                  </ul>
+                  <div id="headerPanelMenu-footer">
+                     <p>&copy; Manines Ganga 2021</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!--Contenido Navbar-->
+
+         <ul class="contenidoNavbar">
+            <div align="center"><object class="Logo" data="/media/icons/ManinesGangaLogo1tinta.svg"
+                  alt="Logo Manines Ganga"></object></div>
+            <!--Títulos H1-->
+            <li>
+               <h1><a href="#">INICIO</h1></a>
+               <!--Vuelta a la página principal-->
+            </li>
+            <li>
+               <h1><a href="#">PROYECTOS</h1></a>
+               <!--Sería un link a otra página de html-->
+            </li>
+
+         </ul>
+      </nav>
+   </header>
+
+   <main aria-label="Contenido principal">
+
+      <!--PRESENTACIÓN-->
+      <section>
+         <h2 id="presentacion">PRESENTACIÓN</h2>
+         <div class="slider">
+            <ul>
+               <!--Carrusel de imagenes-->
+               <li><img src="/media/3.png" class="imagenCarrusel"></li>
+               <li><img src="/media/Branding.png"></li>
+               <li><img src="/media/CataclysmCorp.png"></li>
+               <li><img src="/media/ExperienceMap.png"></li>
+               <li><img src="/media/IA.png"></li>
+               <li><img src="/media/LambdaPodcast.png"></li>
+               <li><a href="https://www.youtube.com/watch?v=BToVZFTRmI0"><img src="/media/ManinesGanga1.png"></a></li>
+               <li><a href="https://www.youtube.com/watch?v=6J0WVFhl46I"><img src="/media/ManinesGanga2.png"></a></li>
+               <li><img src="/media/Posture.png"></li>
+               <li><img src="/media/TiC com a comunicació art.png"></li>
+            </ul>
+         </div>
+         <br>
+         <div class="descripcion">
+            <p>
+               Los Manines Ganga es
+               un joven equipo artístico
+               multidisciplinar que
+               se compromete con el
+               futuro de sus proyectos
+               y empresas como si este
+               fuera suyo propio.
+            </p>
+         </div>
+         <br>
+
+         <!--VALORES-->
+         <h3 id="valores">VALORES</h3>
+         <div class="flex-container">
+            <div class="flex-item-left">
+               <img class="iconosFlex" src="/media/icons/original (1).png" alt="Originalidad">
+               <h4>Originalidad</h4>
+               <p>Creemos que la manera de hacer destacar un proyecto parte desde su propia concepción; evaluar todas
+                  las ideas buscando la más destacable y original.</p>
+            </div>
+            <div class="flex-item-right">
+               <img class="iconosFlex" src="/media/icons/hand.png" alt="Compromiso">
+               <h4>Compromiso</h4>
+               <p>Nuestro equipo toma cada proyecto como si fuera suyo propio:
+                  cuando se fija un objetivo es el mismo para todos, y haremos lo posible para conseguirlo.</p>
+            </div>
+            <div class="flex-item-left">
+               <img class="iconosFlex" src="/media/icons/clock (1).png" alt="Puntualidad">
+               <h4>Puntualidad</h4>
+               <p>Es muy importante para nosotros el definir las etapas de un proyecto; nos enorgullecemos de decir que
+                  nos organizamos las entregas para el plazo previsto y empezamos desde el primer momento a trabajar.
+               </p>
+            </div>
+            <div class="flex-item-right">
+               <div class="flex-item-right">
+                  <img class="iconosFlex" src="/media/icons/quality-control.png" alt="Calidad">
+                  <h4>Calidad</h4>
+                  <p>Somos perfeccionistas: el proyecto no se acaba cuando se cumplen los requisitos sino cuando estamos
+                     totalmente conformes con el trabajo realizado.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--SERVICIOS-->
+      <section>
+         <h2 id="servicios">SERVICIOS</h2>
+         <div class="app">
+            <ul class="hs full">
+               <li class="item">
+                  <h4>Diseño de Logos</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nbyUyMGRlc2lnbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Diseño de Logos" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Diseño de Branding</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJhbmRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Diseño de Branding" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Estrategia de Empresa</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBzdHJhdGVneXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Estrategia de Empresa" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Estrategia de Marketing</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hcmtldGluZyUyMHBsYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Estrategia de Marketing" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Podcasting</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                        alt="Podcasting" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Producción de Video</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1607112812619-182cb1c7bb61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                        alt="Producción de Video" width="100%" height="100%"></div>
+               </li>
+               <li class="item">
+                  <h4>Arte Conceptual</h4>
+                  <div class="item"><img
+                        src="https://images.unsplash.com/photo-1615650949849-37db4f2c67db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"
+                        alt="Arte Conceptual" width="100%" height="100%"></div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!--EQUIPO-->
+      <section>
+         <h2 id="equipo">EQUIPO</h2>
+         <div class="flex-container">
+            <div class="flex-item-left">
+               <img class="FotosEquipo" src="/media/Jon.jpeg" alt="Jon">
+               <h4>Jon</h4>
+            </div>
+            <div class="flex-item-right">
+               <img class="FotosEquipo" src="media/Ivan.jpg" alt="Ivan">
+               <h4>Ivan</h4>
+            </div>
+            <div class="flex-item-left">
+               <img class="FotosEquipo" src="/media/Sergi.jpeg" alt="Sergi">
+               <h4>Sergi</h4>
+            </div>
+            <div class="flex-item-right">
+               <div class="flex-item-right">
+                  <img class="FotosEquipo" src="/media/Juan.jpeg" alt="Joan">
+                  <h4>Joan</h4>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--CONTACTO-->
+      <section>
+         <h2 id="contacto">CONTACTO</h2>
+         <div id="wb_LayoutGrid1">
+            <form name="LayoutGrid1" method="post" action="mailto:sorrylagganga@gmail.com" enctype="text/plain"
+               id="LayoutGrid1">
+               <div class="row">
+                  <div class="col-1">
+                  </div>
+                  <hr id="Line" style="display:block;width: 100%;z-index:23;">
+                  <input type="text" id="Editbox" style="display:block;width: 100%;height:32px;z-index:24;" name="Name"
+                     value="" spellcheck="false" placeholder="Name">
+                  <hr id="Line" style="display:block;width: 100%;z-index:25;">
+                  <input type="text" id="Editbox" style="display:block;width: 100%;height:32px;z-index:26;" name="email"
+                     value="" spellcheck="false" placeholder="Email Address">
+                  <hr id="Line" style="display:block;width: 100%;z-index:27;">
+                  <input type="text" id="Editbox" style="display:block;width: 100%;height:32px;z-index:28;" name="phone"
+                     value="" spellcheck="false" placeholder="Phone Number">
+                  <hr id="Line" style="display:block;width: 100%;z-index:29;">
+                  <textarea name="message" id="TextArea" style="display:block;width: 100%;;height:100px;z-index:30;"
+                     rows="2" cols="65" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
+                  <hr id="Line" style="display:block;width: 100%;z-index:31;">
+                  <input type="submit" id="Button" name="" value="Send"
+                     style="display:inline-block;width:84px;height:45px;z-index:32;">
+               </div>
+         </div>
+         </form>
+         </div>
+      </section>
+   </main>
+</body>
+
+<!--FOOTER-->
+<footer>
+   <div class="piedelaweb">
+      <div class="footer">
+         <div class="side">
+            <aside>
+               <div class="textoFooter">
+                  <p>Mapa de la Web</p>
+               </div>
+               <ul>
+                  <li role="menuitem"><a href="#presentacion" class="nav-link">PRESENTACIÓN</a></li>
+                  <li role="menuitem"><a href="#servicios" class="nav-link">SERVICIOS</a></li>
+                  <li role="menuitem"><a href="#equipo" class="nav-link">EQUIPO</a></li>
+                  <li role="menuitem"><a href="#contacto" class="nav-link">CONTACTO</a></li>
+               </ul>
+            </aside>
+         </div>
+         <div class="main">
+            <div class="textoFooter">
+               <p>Social Media</p>
+            </div>
+            <div class="social-wrapper">
+               <ul>
+                  <li>
+                     <a href="#" target="_blank">
+                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png"
+                           alt="Twitter Logo" class="twitter-icon"></a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                        <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo"
+                           class="instagram-icon"></a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                        <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico"
+                           alt="Facebook Logo" class="facebook-icon"></a>
+                  </li>
+                  <li>
+                     <a href="#" target="_blank">
+                        <img
+                           src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170"
+                           alt="Youtube Logo" class="youtube-icon"></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--COPY-->
+      <p>&copy;Manines Ganga 2021</p>
+   </div>
+</footer>
+
+</html>
